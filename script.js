@@ -4,7 +4,7 @@ class BankAccount {
         this.interestRate = interestRate;
     }
     addInterest(){
-        this.balance = this.balance + (this.balance * this.interestRate);
+        this.balance = this.balance + (this.balance * this.interestRate); 
     }
 }
 
@@ -14,7 +14,7 @@ class BankAccountWithFee extends BankAccount {
         this.fee = fee;
     }
     addInterest(){
-        this.balance = this.balance + (this.balance * this.interestRate);
+        this.balance = this.balance + (this.balance * this.interestRate);  //You dont need to make this method again because it is carried over from extending the BankAccount Class
     }
     applyFee(){
         this.balance = this.balance - this.fee;
